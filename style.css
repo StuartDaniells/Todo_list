@@ -1,0 +1,87 @@
+html,body{
+  width: 100%;
+  height: 100%;
+  background-image: url("bg-img.jpg");
+  background-size: 100% 100%;
+}
+
+.coolTitle {
+  /*For z-index to work used position:relative 
+  (not static - default)*/
+  position: relative;
+  z-index: 0;
+
+  padding-bottom: 3rem;
+  text-align: center;
+  font-family: 'Oswald', Helvetica, sans-serif;
+  font-size: 4rem;
+  transform: skewY(-10deg);
+  letter-spacing: 4px;
+  word-spacing: -8px;
+  color: tomato;
+  text-shadow: 
+    -1px -1px 0 firebrick,
+    -2px -2px 0 firebrick,
+    -3px -3px 0 firebrick,
+    -4px -4px 0 firebrick,
+    -5px -5px 0 firebrick,
+    -6px -6px 0 firebrick,
+    -7px -7px 0 firebrick,
+    -8px -8px 0 firebrick,
+    -30px 20px 40px dimgrey;
+}
+
+
+.done {
+  text-decoration: line-through;
+}
+
+li{
+  margin: 1.2rem;
+  font-weight: bold;
+  list-style-type: square;
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-family: 'Lobster', cursive;
+}
+
+.remove{
+  border-radius: 1px 5px 1px 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.remove:hover{
+  background-color: red;
+  transform: scale(1.2);
+}
+
+#enter, #clearItms{
+  border-radius: 50px 25px;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  box-shadow: 0 5px #999;
+}
+#enter:hover, #clearItms:hover{
+  background-color: #3e8e41
+}
+#enter:active, #clearItms:active{
+  box-shadow: 0 2px #777;
+  transform: translateY(4px);
+}
+
+
+#userinput{
+  position: relative;
+  z-index: 1px;
+  font-size: 1.7rem;
+  width: 400px;
+  height: 30px;
+  border-width: 4px;
+  border-color: #844744;
+}
